@@ -2,13 +2,13 @@
 class Usuario
 {
     // Propiedades
-    public $id;
-    public $nombre;
-    public $correo;
-    public $estado;
+    public int $id;
+    public string $nombre;
+    public string $correo;
+    public int $estado;
 
     // Método constructor
-    public function __construct($id, $nombre, $correo, $estado)
+    public function __construct(int $id, string $nombre, string $correo, int $estado)
     {
         $this->id = $id;
         $this->nombre = $nombre;
@@ -16,4 +16,5 @@ class Usuario
         $this->estado = $estado;
     }
 }
+
 ?>
